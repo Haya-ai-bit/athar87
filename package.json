@@ -1,0 +1,16 @@
+{
+  "name": "athar87",
+  "version": "1.0.0",
+  "description": "منصة أَثَر 87 — المدرسة الثانوية 87 لتوثيق السلوك المتميز والشواهد الطلابية",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node --no-warnings server.js",
+    "create-admin": "node --no-warnings scripts/create-admin.js",
+    "backup": "node --no-warnings scripts/backup.js",
+    "purge": "node --no-warnings scripts/purge.js",
+    "test": "node --no-warnings --test --test-concurrency=1 tests/api.test.js"
+  },
+  "engines": { "node": ">=22.5" },
+  "dependencies": {}
+}
